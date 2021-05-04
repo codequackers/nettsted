@@ -49,3 +49,11 @@ body{
     height: 2.5rem;
     color: white;
 }
+
+.name{
+    padding-left: 10px;
+}
+.full_logo{
+    display: flex;
+    align-items: center;
+}
