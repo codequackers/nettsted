@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#Kursoversikt {
+    position: center;
+    margin: 0 auto 100px auto;
+    width: 800px;
+    height: auto;
+    border-radius: 20px;
+    background: #343434;
+}
+
+
+#Kursoversikt ul li {
+    list-style: none;
+    color: #f8f8ff;
+    font-size: 20px;
+    padding: 20px 24px;
+}
+
+#Kursoversikt .toggle-button {
+    position: absolute;
+    top: 30px;
+    left: 740px;
+}
+
+
+.overskrift > a {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    color: #f8f8ff;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+  .dropdown-container > a {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    color: #f8f8ff;
+    display: block;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .oversikt a:hover {
+      color:#009fe3;
+  }
+
+  
+  .Kursoversikt a:hover, .dropdown-btn:hover {
+    color: #f8f8ff;
+  }
+  
+  .main {
+    font-size: 20px;
+    align-content: center;
+    padding: 0px 10px;
+  }
+  
+  .active {
+    background-color: rgb(37, 37, 37);
+    color: #f8f8ff;
+  }
+  
+  .dropdown-container {
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #2a2a2a;
+    padding-left: 8px;
+  }
+
+  .dropdown-container:last-child {
+      border-radius: 0 0 20px 20px;
+  }
+
+
+  .dropdown-btn {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 22px;
+    color: #f8f8ff;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+  }
+
+  .dropdown-container:hover {
+    cursor: pointer;
+  }
+  
+  .fas  {
+    float: right;
+    margin-left: 10px;
+  }
+
+  h4 {
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    position: 1000px;
+    font-size: 40px;
+    margin-left: 300px;
+    margin-top: 150px;
+    padding-top: 23px;
+    letter-spacing: 1.5px;
+  }
