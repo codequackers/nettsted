@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    background-color: #f8f8ff;
 }
 
 #Kursoversikt {
@@ -14,6 +15,7 @@ body {
     margin: 0 auto 100px auto;
     width: 800px;
     height: auto;
+    padding-bottom: 25px;
     border-radius: 20px;
     background: #343434;
 }
@@ -33,6 +35,7 @@ body {
 }
 
 
+
 .overskrift > a {
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -48,8 +51,9 @@ body {
     outline: none;
 }
 
+
   .dropdown-container > a {
-    padding: 20px;
+    padding: 30px;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     font-size: 18px;
@@ -64,13 +68,15 @@ body {
   }
 
   .oversikt a:hover {
-      color:#009fe3;
+      text-decoration: underline;
   }
 
   
   .Kursoversikt a:hover, .dropdown-btn:hover {
-    color: #f8f8ff;
+    color: #ffffff;
   }
+
+  
   
   .main {
     font-size: 20px;
@@ -89,19 +95,21 @@ body {
     font-size: 20px;
     background-color: #2a2a2a;
     padding-left: 8px;
+
   }
 
   .dropdown-container:last-child {
       border-radius: 0 0 20px 20px;
+      margin-bottom: 20px;
   }
 
 
-  .dropdown-btn {
+  .dropdown-btn { 
     padding: 20px;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     font-size: 22px;
-    color: #f8f8ff;
+    color: #ffffff;
     border: none;
     background: none;
     width:100%;
@@ -112,6 +120,8 @@ body {
     align-items: center;
   }
 
+
+
   .dropdown-container:hover {
     cursor: pointer;
   }
@@ -121,13 +131,14 @@ body {
     margin-left: 10px;
   }
 
-  h4 {
+  h1 {
     font-family: 'Bebas Neue', cursive;
     color: white;
     position: 1000px;
     font-size: 40px;
     margin-left: 300px;
     margin-top: 150px;
+    margin-bottom: 20px;
     padding-top: 23px;
     letter-spacing: 1.5px;
   }

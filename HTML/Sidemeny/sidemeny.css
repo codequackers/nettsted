@@ -76,7 +76,7 @@ body {
   
   .active {
     background-color: rgb(37, 37, 37);
-    color: f8f8ff;
+    color: #f8f8ff;
   }
   
   .dropdown-container {
