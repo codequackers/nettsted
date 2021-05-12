@@ -31,6 +31,8 @@ main{
     margin: 0 auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
+    display: flex;
+    flex-direction: column;
 }
 /* header styling */
 .header p {
@@ -89,6 +91,7 @@ h3
     letter-spacing: 1px;
     color: black;
     margin: 10px 0 0px 0;
+    align-self: center;
 }
 
 h1{
@@ -110,6 +113,7 @@ h3 span{
     display: inline-block;
     border-bottom: 3px solid var(--main-color); 
     font-size: inherit;  
+    
 }
 
 h1 span{
@@ -129,10 +133,10 @@ h3 span{
 
 footer {
     background: #343434;
-    position: relative;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 3.5rem;
+    height: 2.5rem;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -172,4 +176,9 @@ footer p {
 
 .hidden{
    display: none;
+}
+
+.pressebilde{
+    padding-top: 20px;
+    align-self: center;
 }
