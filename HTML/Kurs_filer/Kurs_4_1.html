@@ -10,7 +10,7 @@
     <script src="./script/sidemeny.js"></script>
     <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
-    <title>Kurs 1.2 Hva er Programmering?</title>
+    <title>Kurs 4.1 If-setninger</title>
 </head>
 
 <body>
@@ -97,7 +97,7 @@
             </button>
             <div class="dropdown-container">
               <a href="../Kurs_filer/Kurs_4_1.html">4.1 Læringsmål Løkker</a>
-              <a href="../Kurs_filer/Kurs_4_2.html">4.2 If-setninger</a>
+              <a href="#">4.2 If-setninger</a>
               <a href="#">4.3 For-løkker</a>
               <a href="#">4.4 While-løkker</a>
               <a href="#">QUIZ Kapittel.4 - Løkker</a>
@@ -111,25 +111,79 @@
 
     <main>
         <!-- HER KOMMER HOVEDINNHOLDET -->
-        <h1><span>Hovedoverskrift</span></h1>
+        <h1><span>4.1 If-setninger</span></h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis labore nihil dicta. Pariatur illum
-            provident quis similique. Magnam, perferendis. Sint quibusdam dicta delectus obcaecati saepe eligendi ad
-            consectetur nobis!
-        </p>
-        <h2><span>Overskrift 2</span></h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minus voluptate labore quas aut ipsum
-            repellendus, vero magni assumenda nesciunt vitae? Laboriosam similique sit voluptate, commodi quaerat eius
-            ipsa aut?
-        </p>
-        <h3><span>Overskrift 3</span></h3>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum porro repudiandae id nesciunt minus
-            voluptate nihil tempora illo a molestiae! Unde quam nesciunt architecto necessitatibus numquam ipsum tenetur
-            corrupti vel.
+            For at en datamaskin skal kunne kjøre kode må den ha noen betingelser. En If-setning (også kalt betingelsessetning), brukes når man ønsker å få en bestemt betingelse oppfylt før koden kjøres. 
+            Det vil si at det som vi skriver som betingelse må være sant, eller stemme før koden inni setningen blir kjørt. Måten If-setninger skrives på er: 
+            <br><br>
         </p>
 
+        <!--HER KOMMER EDITOR-->
+
+            if (betingelse) { 
+
+            Kode som kjøres når betingelsene er oppfylt 
+                
+            };
+        
+    
+        
+        <p>
+            <br><br>Eksempel:<br><br>
+        </p>
+
+        <!--HER KOMMER EDITOR-->
+
+        let person = 20;
+
+        if (person >= 18){
+
+        //Hvis betingelsen er sann vil koden kjøres her
+
+        };
+
+        <p>
+            <br><br>Dersom man ønsker å skape et utfall for når betingelsen ikke blir møtt, bruker vi kommandoen else. 
+            Det som da vil skje er at koden som står innenfor krøllparentesene til else kommandoen, blir kjørt når betingelsen til if ikke blir møtt.  
+            La oss ta et eksempel: Aldersgrensen på spillet er 15 år. Så hvis du er 15  år eller eldre kan du spille, men er du yngre får du ikke spille, slik blir det skrevet i JavaScript:
+            <br><br>
+        </p>
+
+        <!--HER KOMMER EDITOR-->
+
+        if (person < 15){
+
+            console.log("Du kan ikke spille spillet.");
+            
+            } else {
+            
+            console.log("Du kan spille spillet.");
+            
+            }
+
+            <p>
+               <br><br> Med en if-setning kan man sjekke flere betingelser, da bruker vi kommandoen else if. 
+               Det som er viktig å huske på når vi skal sjekke flere betingelser er at vi sjekker hver enkelt individuelt.  
+               Slik skriver man det i JavaScript: <br><br>
+            </p>
+
+            <!--HER KOMMER EDITOR-->
+            if (person <= 18){
+
+                console.log("Personen er 18 år eller eldre");
+                
+                } else if (person <= 15){
+                
+                console.log("Personen er 15 år eller eldre");
+                
+                } else {
+                
+                console.log("Personen er mindre en 15 år");
+                
+                };
+
+
+        
     </main>
 
 
