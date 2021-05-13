@@ -10,7 +10,7 @@
     <script src="./script/sidemeny.js"></script>
     <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
-    <title>Kurs 3.6 Tilordningsoperatorer</title>
+    <title>Kurs 3.8 Modulus</title>
 </head>
 
 <body>
@@ -111,20 +111,40 @@
 
     <main>
         <!-- HER KOMMER HOVEDINNHOLDET -->
-        <h1><span>3.6 Tilordningsoperatorer</span></h1>
-        <p>
-            Som nevnt tidligere i kurset bruker man en tilordningsoperator til å sette eller endre verdien til en variabel. Man bruker da = tegnet. Det finner flere ulike operatorer av denne typen, og nedenfor kan du se en oversikt over de mest brukte. 
-            <br>
-            <br> 
- 
+        <h1><span>3.8 Modulus</span></h1>
+        <p>Modulusoperatoren baserer seg på et konsept vi kjenner fra divisjon i matematikken, nemlig rest etter divisjon. <br><br>For eksempel:
 
-            Tabell av tilordningsoperatorer som brukes i JavaScript:
-            <br>
-            <br>
-
-            <img src="../Screenshots/tabell_tilordning.JPG" alt="Illustrasjon CodeQuackers">
+            La oss finne 34/5. Vi vet at 6 * 5 = 30 og 7 * 5 = 35.<br>
+            Det vil si at tallet 5 kun passer 6 hele ganger i 34. Har vi det 7 ganger så vil vi gå over 34.
+            
+            Når vi har 6 * 5 = 30 mangler vi altså litt for å komme opp til 34. Forskjellen er 34 – 30 = 4. Da sier vi at resten etter divisjonen 34/5 er 4. 
+            <br><br>For å finne dette tallet direkte i programkoden bruker vi modulusoperatoren. Denne er et prosenttegn som erstatter deletegnet. I stedet for å skrive 34/5 skriver vi altså 34%5.<br><br>
         </p>
+
+        <!--HER KOMMER EDITOR-->
+
+        console.log(34%5)
+
+        Resultat: 4
+
+        console.log(34/5)
+
+        Resultat: 6.8
+
+        <p>
+            <br>Dersom divisjonen faktisk går opp, så blir det ingen rest, og da blir også modulus lik 0. <br><br>
+
+        </p>
+
+        <!--HER KOMMER EDITOR-->
+
+        console.log(35%5);
+
+        Resultat: 0
+
         
+
+
     </main>
 
 
