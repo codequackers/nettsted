@@ -17,6 +17,7 @@ body {
     background: #343434;
     left: -680px;
     transition: .4s;
+    z-index: 10;
 }
 
 #sidebar.active {

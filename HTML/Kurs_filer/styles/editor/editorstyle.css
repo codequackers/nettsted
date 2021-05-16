@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+/*
+    font-family: 'Source Code Pro', monospace;
+*/
+
+:root{
+    --dark-color: #303030;
+    --dark-color-light: #30303080;
+    --light-color: #f8f8f8;
+    --main-color: #1c9dd8;
+    --main-color-light: #1c9dd880;
+}
+
+.CodeMirror{
+    font-family: 'Source Code Pro', monospace;
+    width: 100%;
+    border: solid var(--dark-color-light);
+    border-width: 1px 1px 0 1px;
+    border-radius: 10px;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 1em;
+}
+
+.CodeMirror-sizer{
+    position: static;
+}
+
+.CodeMirror-linenumber{
+    text-align: center;
+}

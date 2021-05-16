@@ -26,8 +26,8 @@ main{
     background: var(--light-color);
     width: 80%;
     max-width: 1200px;
-    height: 100vh;
-    margin: 0 auto;
+    /* height: 100vh; */
+    margin: 0 auto 2.5rem auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     display: flex;
@@ -73,11 +73,7 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 10;
-}
-
-body {
-    margin: 0;
+    z-index: 1000;
 }
 
 /* HEADERS */
@@ -127,8 +123,6 @@ h3 span{
     height: 47px;
 }
 
-
-
 footer {
     background: #343434;
     position: fixed;
@@ -139,6 +133,7 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-top: -1%;
+    /*z-index: 100;*/
 }
 
 footer p {
