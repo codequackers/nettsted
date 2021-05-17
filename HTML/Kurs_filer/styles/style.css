@@ -26,15 +26,27 @@ main{
     background: var(--light-color);
     width: 80%;
     max-width: 1200px;
-    /* height: 100vh; */
-    margin: 0 auto 2.5rem auto;
+    margin: 0 auto 3rem auto;
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     display: flex;
     flex-direction: column;
 }
+
+p{
+    margin: 1rem 0;
+}
+
+ol{
+    list-style: decimal inside;
+}
+
+ul{
+    list-style: inside;
+}
+
 /* header styling */
-.header p {
+header p {
     display: inline;
     padding: 20px;
     font-family: "Montserrat", sans-serif;
@@ -65,7 +77,7 @@ main{
     color: white;
 }
 
-.header {
+header {
     padding: 10px;
     background: #343434;
     position: sticky;
