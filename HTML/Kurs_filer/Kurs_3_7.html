@@ -10,141 +10,29 @@
     <script src="./script/sidemeny.js"></script>
     <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
-    <title>Kurs 3.7 Modulus</title>
+    <link rel="stylesheet" href="./styles/editor/codemirror.css">
+    <title>Kurs 3.7 Tilordningsoperatorer</title>
 </head>
 
 <body>
+    <header></header>
 
+    <div id = "sidebar"></div>
 
-
-    <div class="header">
-        <div class="full_logo">
-            <img class="logo" src="logo/cyan_logo_without_txt.png" alt="CodeQuackers Logo" width="50px">
-            <img class="name" src="logo/name.png" alt="CodeQuackers Logo" width="100px">
-        </div>
-
-        <div class="menu">
-            <p><a class="basic" href="x">Hjem</a></p>
-            <p><a class="basic" href="x">Kurs</a></p>
-            <p><a class="basic" href="x">Quiz</a></p>
-            <p><a class="basic" href="x">Kodeeditor</a></p>
-        </div>
-
-    </div>
-
-
-
-    <div id="sidebar">
-        <div class="toggle-button" id="toggle-button" onclick="show()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <div class="sidebar">
-            <h4>Innholdsfortegnelse</h4>
-            <br>
-            <br>
-            <a href="#">Introduksjon til CodeQuackers læringsressurs</a>
-
-
-            <button class="dropdown-btn">KAP.1 - Introduksjon til programmering
-                <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">1.1 Introduksjon til CodeQuackers</a>
-                <a href="#">1.2 Læringsmål - Introduksjon</a>
-                <a href="#">1.3 Hva er programmering?</a>
-                <a href="#">1.4 Programmeringsspråk</a>
-                <a href="#">1.5 Hvor skriver vi koden?</a>
-                <a href="#">1.6 Hvor kjører vi koden?</a>
-                <a href="#">1.7 Programmering direkte i nettleseren</a>
-                <a href="#">1.8 Nettbaserte utviklingsmiljø</a>
-                <a href="#">QUIZ Kapittel.1 - Introduksjon til programmering</a>
-            </div>
-
-
-            <button class="dropdown-btn">KAP.2 - Variabler
-                <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">2.1 Læringsmål Variabler</a>
-                <a href="#">2.2 Dataprogram</a>
-                <a href="#">2.3 Hva er en variabel?</a>
-                <a href="#">2.4 Egenskapene til en variabel</a>
-                <a href="#">2.5 Lage variabler</a>
-                <a href="#">2.6 Navngiving av variabler</a>
-                <a href="#">QUIZ Kapittel.2 - Variabler</a>
-            </div>
-
-            <button class="dropdown-btn">KAP.3 - Datatyper, konstanter og operatorer
-                <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="../Kurs_filer/Kurs_3_1.html">3.1 Datatyper</a>
-                <a href="../Kurs_filer/Kurs_3_2.html">3.2 Identifikatorer og literaler</a>
-                <a href="../Kurs_filer/Kurs_3_3.html">3.3 Hva er en konstant?</a>
-                <a href="../Kurs_filer/Kurs_3_4.html">3.4 Operatorer</a>
-                <a href="../Kurs_filer/Kurs_3_5.html">3.5 Aritmetiske operatorer</a>
-                <a href="../Kurs_filer/Kurs_3_6.html">3.6 Tilordningsoperatorer</a>
-                <a href="../Kurs_filer/Kurs_3_7.html">3.7 Modulus</a>
-                <a href="#">QUIZ Kapittel.3 - Datatyper, konstanter og operatorer</a>
-            </div>
-
-
-            <button class="dropdown-btn">KAP.4 - Løkker
-                <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-              <a href="#">4.1 Læringsmål Løkker</a>
-              <a href="#">4.2 If-setninger</a>
-              <a href="#">4.3 For-løkker</a>
-              <a href="#">4.4 While-løkker</a>
-              <a href="#">QUIZ Kapittel.4 - Løkker</a>
-            </div>
-
-        </div>
-
-
-    </div>
-
-
+    
     <main>
         <!-- HER KOMMER HOVEDINNHOLDET -->
-        <h1><span>3.7 Modulus</span></h1>
-        <p>Modulusoperatoren baserer seg på et konsept vi kjenner fra divisjon i matematikken, nemlig rest etter divisjon. <br><br>For eksempel:
-
-            La oss finne 34/5. Vi vet at 6 * 5 = 30 og 7 * 5 = 35.<br>
-            Det vil si at tallet 5 kun passer 6 hele ganger i 34. Har vi det 7 ganger så vil vi gå over 34.
-            
-            Når vi har 6 * 5 = 30 mangler vi altså litt for å komme opp til 34. Forskjellen er 34 – 30 = 4. Da sier vi at resten etter divisjonen 34/5 er 4. 
-            <br><br>For å finne dette tallet direkte i programkoden bruker vi modulusoperatoren. Denne er et prosenttegn som erstatter deletegnet. I stedet for å skrive 34/5 skriver vi altså 34%5.<br><br>
-        </p>
-
-        <!--HER KOMMER EDITOR-->
-
-        console.log(34%5)
-
-        Resultat: 4
-
-        console.log(34/5)
-
-        Resultat: 6.8
-
+        <h1><span>3.7 Tilordningsoperatorer</span></h1>
         <p>
-            <br>Dersom divisjonen faktisk går opp, så blir det ingen rest, og da blir også modulus lik 0. <br><br>
-
+            Som nevnt tidligere i kurset bruker man en tilordningsoperator til å sette eller endre verdien til en variabel. Man bruker da = tegnet. Det finner flere ulike operatorer av denne typen, og nedenfor kan du se en oversikt over de mest brukte. 
+            <br>
+            <br> 
+            Tabell av tilordningsoperatorer som brukes i JavaScript:
+            <br>
+            <br>
+            <img src="../Screenshots/tabell_tilordning.JPG" alt="Illustrasjon CodeQuackers">
         </p>
-
-        <!--HER KOMMER EDITOR-->
-
-        console.log(35%5);
-
-        Resultat: 0
-
         
-
-
     </main>
 
 
@@ -160,4 +48,27 @@
 
 </body>
 
+
+<link rel="stylesheet" href="./styles/editor/codemirror.css">
+<script src="./script/editor/codemirror.js"></script>
+<script src="./script/editor/javascript.js"></script>
+<script>
+    const values = [
+        '',
+    ];
+
+    for(let i = 0; i < values.length; i++){
+        const elem = document.getElementById('eksempel'+(i+1));
+        const ed = CodeMirror(elem, {
+            mode: 'javascript',
+            lineNumbers: false,
+            lineWrapping: true,
+            value: values[i],
+            readOnly: 'nocursor' 
+        });
+    }
+</script>
+<link rel="stylesheet" href="./styles/editor/editorstyle.css">
+<script src="./script/externals.js"></script>
+</html> 
 </html>

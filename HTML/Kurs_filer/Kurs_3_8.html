@@ -11,34 +11,33 @@
     <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
     <link rel="stylesheet" href="./styles/editor/codemirror.css">
-    <title>Kurs 3.4 Hva er en konstant?</title>
+    <title>Kurs 3.8 Modulus</title>
 </head>
 
 <body>
-
     <header></header>
 
     <div id = "sidebar"></div>
 
+
     <main>
         <!-- HER KOMMER HOVEDINNHOLDET -->
-        <h1><span>3.4 Hva er en konstant?</span></h1>
-        <p>
-            Når programmet ditt kjører, kan variablene du har laget endre verdien sin underveis.
-            Noen ganger vil du at variablene ikke skal endre verdi, da kan du bruke konstanter.
-            Konstanter ligner veldig på variabler, men den vesentlige forskjellen er at du ikke kan endre verdien på konstanten etter at du har laget den.<br>
-            <br>Verdien må settes samtidig som du oppretter konstanten. For å lage en konstant bruker vi kodeordet const. <br>I motsetning til variabelnavn bruker man ofte kun store bokstaver i konstantnavn, og deler ord med _. 
- 
+        <h1><span>3.7 Modulus</span></h1>
+        <p>Modulusoperatoren baserer seg på et konsept vi kjenner fra divisjon i matematikken, nemlig rest etter divisjon. <br><br>For eksempel:
+
+            La oss finne 34/5. Vi vet at 6 * 5 = 30 og 7 * 5 = 35.<br>
+            Det vil si at tallet 5 kun passer 6 hele ganger i 34. Har vi det 7 ganger så vil vi gå over 34.
+            
+            Når vi har 6 * 5 = 30 mangler vi altså litt for å komme opp til 34. Forskjellen er 34 – 30 = 4. Da sier vi at resten etter divisjonen 34/5 er 4. 
+            <br><br>For å finne dette tallet direkte i programkoden bruker vi modulusoperatoren. Denne er et prosenttegn som erstatter deletegnet. I stedet for å skrive 34/5 skriver vi altså 34%5.<br><br>
         </p>
-        <br>
-        <br>
         <div id = "eksempel1"></div>
-        <br>
-        <br>
         <p>
-            Konstanter kan være greie å bruke når du vet at du skal bruke samme verdi flere steder i programkoden din. 
+            <br>Dersom divisjonen faktisk går opp, så blir det ingen rest, og da blir også modulus lik 0. <br><br>
         </p>
-    
+
+        <!--HER KOMMER EDITOR-->
+        <div id = "eksempel2"></div>
     </main>
 
     <footer>
@@ -52,13 +51,14 @@
 
 </body>
 
+
 <link rel="stylesheet" href="./styles/editor/codemirror.css">
 <script src="./script/editor/codemirror.js"></script>
 <script src="./script/editor/javascript.js"></script>
 <script>
     const values = [
-        'const FUGLETYPE = "and";\n\const ANTALL_ARTER = 120;',
-        'let navnDam = "Andedammen";\n\console.log(navnDam);\n\console.log(typeof navnDam);',
+        'console.log(34%5)\n\Resultat: 4\n\console.log(34/5)\n\Resultat: 6.8',
+        'console.log(35%5);\n\Resultat: 0',
     ];
 
     for(let i = 0; i < values.length; i++){
@@ -75,4 +75,5 @@
 <link rel="stylesheet" href="./styles/editor/editorstyle.css">
 <script src="./script/externals.js"></script>
 </html> 
+
 </html>
