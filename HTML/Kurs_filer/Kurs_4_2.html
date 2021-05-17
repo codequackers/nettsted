@@ -11,59 +11,41 @@
     <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
     <script src="./script/script.js"></script>
     <link rel="stylesheet" href="./styles/editor/codemirror.css">
-    <title>Kurs 4.2 For-løkker</title>
+    <title>Kurs 4.2 If-setninger</title>
 </head>
 
 <body>
+
     <header></header>
-    
-    <div id="sidebar"></div>
+
+    <div id = "sidebar"></div>
+
 
     <main>
         <!-- HER KOMMER HOVEDINNHOLDET -->
-        <h1><span>4.3 For-løkker</span></h1>
+        <h1><span>Hovedoverskrift</span></h1>
         <p>
-            En av de store styrkene til en datamaskin er evnen til å gjøre noe mange ganger etter hverandre svært fort. Ofte ønsker vi å gjøre noe et bestemt antall ganger. I et dataprogram bruker vi en løkke for å gjøre noe gjentatte ganger, og hvis vi vet hvor mange ganger vi ønsker å gjøre det så kan en for-løkke være ideell.<br><br>
-
-            For å gjøre noe et bestemt antall ganger så trenger vi noe som kan holde styr på hvor mange ganger vi allerede har gjort noe. Til det kan vi bruke en variabel. Vi må så vite tre ting om variabelen:<br><br>
-            
-            1. Hva skal startverdien være? Vi kan feks. starte med verdien 0.<br>
-            2. Hva skal sluttverdien være? Dette sier vi til programmet ved å stille et krav til variabelen, f.eks. kan vi si variabelen må være mindre enn 10.<br>
-            3. Hvor mye skal variabelen endre seg hver gang vi går gjennom løkka?<br><br>
-            På det siste punktet er det viktig å passe på at variabelen endrer seg slik at den til slutt passerer sluttverdien. Hvis vi sier variabelen skal starte på 0, må være mindre enn 10, og hele tiden minker med 1, så vil programmet fortsette å gå gjennom løkka i det uendelige. Da vil programmet kræsje!
-
-            For å illustrere syntaksen til en for-løkke kan vi begynne med et enkelt eksempel. Vi ønsker å lage et program som teller fra 1 til 10. Da lar vi teller-variabelen starte på 1. Vanligvis ville vi sagt:
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis labore nihil dicta. Pariatur illum
+            provident quis similique. Magnam, perferendis. Sint quibusdam dicta delectus obcaecati saepe eligendi ad
+            consectetur nobis!
         </p>
-       <div id = "eksempel1"></div>
-       <p>
-        Så kommer kravet, teller må være mindre enn, eller lik, 10:
-       </p>       
-       <div id = "eksempel2"></div>
-       <p>
-        Til slutt ønsker vi å øke telleren med 1 for hver runde gjennom løkka. Altså vil vi si at etter hver runde så får vi:
-       </p>
-       <div id = "eksempel3"></div>
-       <p>
-        Inni selve løkka, i hver runde, vil vi så skrive ut verdien til telleren i konsollen:
-       </p>
-       <div id = "eksempel4"></div>
-       <p>
-        Nå har vi alle ingrediensene til for-løkka, vi må bare skrive de opp på rett måte. Når vi kombinerer alle tingene ovenfor får vi:
-       </p>
-       <div id = "eksempel5"></div>
-      <p>
-        Vi ser at all informasjonen om variabelen som holder styr på hvor mange ganger vi har gått gjennom løkka oppgis inni parentesen med kodeordet for. Alt som står mellom { og } er den koden som kjøres hver runde i løkka.
-        Det er vanlig å bruke litt enklere navn på tellervariabelen. Man står fritt til å velge navn, men som regel er det en bokstav som f.eks. i som brukes. 
-        I tillegg er det også vanlig å forkorte skrivemåten for hvor mye tellervariabelen skal øke med for hver runde. Så lenge den bare øker med 1 så pleier vi å bruker ++ operatoren. Med disse to endringene blir for-løkka vi skrev ovenfor til:
-      </p>
+        <h2><span>Overskrift 2</span></h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, minus voluptate labore quas aut ipsum
+            repellendus, vero magni assumenda nesciunt vitae? Laboriosam similique sit voluptate, commodi quaerat eius
+            ipsa aut?
+        </p>
+        <h3><span>Overskrift 3</span></h3>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum porro repudiandae id nesciunt minus
+            voluptate nihil tempora illo a molestiae! Unde quam nesciunt architecto necessitatibus numquam ipsum tenetur
+            corrupti vel.
+        </p>
 
-      <div id = "eksempel6"></div>
-       <p>
-        Nedenfor vises en illustrasjon av anatomien til en for-løkke:
-       </p>
-
-       <img src="../Screenshots/forlokke.JPG" alt="Illustrasjon CodeQuackers">
     </main>
+
+
+
     <footer>
         <p>&#169; Codequackers 2021</p>
         <div class="socialmedia">
@@ -73,32 +55,32 @@
         </div>
     </footer>
 
-    <link rel="stylesheet" href="./styles/editor/codemirror.css">
-<script src="./script/editor/codemirror.js"></script>
-<script src="./script/editor/javascript.js"></script>
-<script>
-    const values = [
-        'let teller = 1;',
-        'teller <= 10;',
-        'teller = teller + 1;',
-        'console.log (teller);',
-        'for(let teller = 0; teller <= 10; teller = teller + 1) {console.log(teller);}',
-        'for(let i = 0; i <= 10; i++) {console.log(i);};',
-    ];
+    </body>
 
-    for(let i = 0; i < values.length; i++){
-        const elem = document.getElementById('eksempel'+(i+1));
-        const ed = CodeMirror(elem, {
-            mode: 'javascript',
-            lineNumbers: false,
-            lineWrapping: true,
-            value: values[i],
-            readOnly: 'nocursor' 
-        });
-    }
-</script>
-<link rel="stylesheet" href="./styles/editor/editorstyle.css">
-<script src="./script/externals.js"></script>
-</html>
-</body>
-</html>
+    <link rel="stylesheet" href="./styles/editor/codemirror.css">
+    <script src="./script/editor/codemirror.js"></script>
+    <script src="./script/editor/javascript.js"></script>
+    <script>
+        const values = [
+            'let teller = 1;',
+            'teller <= 10;',
+            'teller = teller + 1;',
+            'console.log (teller);',
+            'for(let teller = 0; teller <= 10; teller = teller + 1) {console.log(teller);}',
+            'for(let i = 0; i <= 10; i++) {console.log(i);};',
+        ];
+    
+        for(let i = 0; i < values.length; i++){
+            const elem = document.getElementById('eksempel'+(i+1));
+            const ed = CodeMirror(elem, {
+                mode: 'javascript',
+                lineNumbers: false,
+                lineWrapping: true,
+                value: values[i],
+                readOnly: 'nocursor' 
+            });
+        }
+    </script>
+    <link rel="stylesheet" href="./styles/editor/editorstyle.css">
+    <script src="./script/externals.js"></script>
+    </html>
