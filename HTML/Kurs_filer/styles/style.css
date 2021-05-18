@@ -120,7 +120,7 @@ h3 span{
     display: inline-block;
     border-bottom: 3px solid var(--main-color); 
     font-size: inherit;  
-    
+    padding-bottom: 0.05em; 
 }
 
 h1 span{
