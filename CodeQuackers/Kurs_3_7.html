@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sidemeny.css">
+    <script src="./script/sidemeny.js"></script>
+    <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./styles/editor/codemirror.css">
+    <title>Kurs 3.7 Tilordningsoperatorer</title>
+</head>
+
+<body>
+    <header></header>
+
+    <div id = "sidebar"></div>
+
+    
+    <main>
+        <!-- HER KOMMER HOVEDINNHOLDET -->
+        <h1><span>3.7 Tilordningsoperatorer</span></h1>
+        <p>
+            Som nevnt tidligere i kurset bruker man en tilordningsoperator til å sette eller endre verdien til en variabel. Man bruker da = tegnet. Det finner flere ulike operatorer av denne typen, og nedenfor kan du se en oversikt over de mest brukte. 
+            <br>
+            <br> 
+            Tabell av tilordningsoperatorer som brukes i JavaScript:
+            <br>
+            <br>
+            <img src="../Screenshots/tabell_tilordning.JPG" alt="Illustrasjon CodeQuackers" width="700px">
+        </p>
+        
+    </main>
+
+
+
+    <footer>
+        <p>&#169; Codequackers 2021</p>
+        <div class="socialmedia">
+            <i class="fab fa-facebook fa-lg"></i>
+            <i class="fab fa-youtube fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+        </div>
+    </footer>
+
+</body>
+
+
+<link rel="stylesheet" href="./styles/editor/codemirror.css">
+<script src="./script/editor/codemirror.js"></script>
+<script src="./script/editor/javascript.js"></script>
+<script>
+    const values = [
+        '',
+    ];
+
+    for(let i = 0; i < values.length; i++){
+        const elem = document.getElementById('eksempel'+(i+1));
+        const ed = CodeMirror(elem, {
+            mode: 'javascript',
+            lineNumbers: false,
+            lineWrapping: true,
+            value: values[i],
+            readOnly: 'nocursor' 
+        });
+    }
+</script>
+<link rel="stylesheet" href="./styles/editor/editorstyle.css">
+<script src="./script/externals.js"></script>
+</html> 
+</html>

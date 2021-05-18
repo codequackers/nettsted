@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sidemeny.css">
+    <script src="./script/sidemeny.js"></script>
+    <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./styles/editor/codemirror.css">
+    <title>Kurs 3.3 Identifikatorer og literaler</title>
+</head>
+
+<body>
+    <header></header>
+
+    <div id = "sidebar"></div>
+
+    <main>
+        <h1><span>3.2 Identifikatorer og literaler</span></h1>
+        <p>
+            Identifikatorer er en fellesbetegnelse på ting vi navngir i koden selv, vanligvis funksjoner eller variabler. 
+            <br>
+            <br>
+            Literaler er verdier vi skriver inn i koden, slik som eks. Et tall eller en tekst. Når man holder på å lære seg hvordan å programmere kan det være lett å forveksle disse to. Legg merke til de to eksemplene nedenfor: 
+            <br>
+            <br>
+            I det første eksempelet skriver vi ut verdien til antallEnder, altså 7. I det andre eksempelet skriver vi ut teksten antallEnder. 
+        </p>
+        
+        <h3><span>Eksempel 1:</span></h3>
+        <p>
+            <div id = "eksempel1"></div>
+        </p>
+
+        <h3><span>Eksempel 2:</span></h3>
+        <p>
+            <div id = "eksempel2"></div>
+        </p>
+
+    </main>
+
+    <footer>
+        <p>&#169; Codequackers 2021</p>
+        <div class="socialmedia">
+            <i class="fab fa-facebook fa-lg"></i>
+            <i class="fab fa-youtube fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+        </div>
+    </footer>
+
+    <link rel="stylesheet" href="./styles/editor/codemirror.css">
+<script src="./script/editor/codemirror.js"></script>
+<script src="./script/editor/javascript.js"></script>
+<script>
+    const values = [
+        'let antallEnder = 5;\n\console.log(antallEnder);',
+        'let antallEnder = 5;\n\console.log("antallEnder");',
+    ];
+
+    for(let i = 0; i < values.length; i++){
+        const elem = document.getElementById('eksempel'+(i+1));
+        const ed = CodeMirror(elem, {
+            mode: 'javascript',
+            lineNumbers: false,
+            lineWrapping: true,
+            value: values[i],
+            readOnly: 'nocursor' 
+        });
+    }
+</script>
+<link rel="stylesheet" href="./styles/editor/editorstyle.css">
+<script src="./script/externals.js"></script>
+</html> 
+</html>
+</body>

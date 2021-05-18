@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sidemeny.css">
+    <script src="./script/sidemeny.js"></script>
+    <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./styles/editor/codemirror.css">
+    <title>Navngivning av variabler</title>
+</head>
+
+<body>
+    <header></header>
+    
+    <div id="sidebar"></div>
+
+
+    <main>
+        <!-- HER KOMMER HOVEDINNHOLDET -->
+        <h1><span>Navngivning av variabler</span></h1>
+        <p>
+            Når du skal navngi variabler har du nokså stor frihet til å velge det du ønsker, men det er noen ting du må ta hensyn til.  
+        </p>
+        <p>
+            <strong>Punkt.1:</strong> <br> Ikke bruk kodeord som variabelnavn. (let, const, if, for) 
+        </p>
+        <p>
+            <em>Feil:</em>
+        </p>
+        <div id="eksempel1"></div>
+        <p>
+            <strong>Punkt.2:</strong> <br> Ikke ha mellomrom i variabelnavnet og bruk Kamelstil (Camel case). Kamelstil betyr at man begynner å skrive med små bokstaver, og for hvert nytt ord har man en stor bokstav (eks. antallEnder).
+        </p>
+        <p>
+            <em>Feil:</em>
+        </p>
+        <div id="eksempel2"></div>
+        <p>
+            <em>Riktig:</em>
+        </p>
+        <div id="eksempel3"></div>
+        <p>
+            <strong>Punkt.3:</strong> <br> Ikke start med nummer som variabelnavn, nummer kan brukes inni variabelnavn.
+        </p>
+        <p>
+            <em>Feil:</em>
+        </p>
+        <div id="eksempel4"></div>
+        <p>
+            <em>Riktig:</em>
+        </p>
+        <div id="eksempel5"></div>
+        <p>
+            <strong>Punkt.4:</strong> <br> _ og $ kan brukes i variabelnavn, men ikke andre spesialkarakter 
+        </p>
+        <p>
+            <em>Feil:</em>
+        </p>
+        <div id="eksempel6"></div>
+        <p>
+            <em>Riktig:</em>
+        </p>
+        <div id="eksempel7"></div>
+        <p>
+            <strong>Punkt.5:</strong> <br> JavaScript skiller mellom store og små bokstaver, og ikke bruk æ,ø,å. 
+        </p>
+        <p>
+            <em>Feil:</em>
+        </p>
+        <div id="eksempel8"></div>
+        <p>
+            <em>Riktig:</em>
+        </p>
+        <div id="eksempel9"></div>
+        <p>
+            <strong>Punkt.6:</strong> <br> Brukt variabelnavn som sier hva den inneholder/hva den gjør.
+        </p>
+        <p>
+            <em>Feil:</em>
+        </p>
+        <div id="eksempel10"></div>
+
+    </main>
+
+    <footer>
+        <p>&#169; Codequackers 2021</p>
+        <div class="socialmedia">
+            <i class="fab fa-facebook fa-lg"></i>
+            <i class="fab fa-youtube fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+        </div>
+    </footer>
+
+</body>
+<link rel="stylesheet" href="./styles/editor/codemirror.css">
+<script src="./script/editor/codemirror.js"></script>
+<script src="./script/editor/javascript.js"></script>
+<script>
+    const values = [
+        'let let = 15;\n\nlet if = 15;',
+        'let antall ender = 7;',
+        'let antallEnder = 7;',
+        'let 7antallEnder = 7;',
+        'let antallEnder7 = 7;',
+        'let antallEnder!!! = 7;',
+        'let $antall_Ender = 7;',
+        'let antallrødeender = 7;',
+        'let antallRodeEnder = 7;',
+        'let 7grandbøt& yo = 7;'
+    ];
+
+    for(let i = 0; i < values.length; i++){
+        const elem = document.getElementById('eksempel'+(i+1));
+        const ed = CodeMirror(elem, {
+            mode: 'javascript',
+            lineNumbers: false,
+            lineWrapping: true,
+            value: values[i],
+            readOnly: 'nocursor' 
+        });
+    }
+
+</script>
+<link rel="stylesheet" href="./styles/editor/editorstyle.css">
+<script src="./script/externals.js"></script>
+</html>

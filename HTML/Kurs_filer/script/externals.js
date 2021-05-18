@@ -71,10 +71,10 @@ const sidebar = `
         <i class="fas fa-caret-down"></i>
     </button>
     <div class="dropdown-container">
-        <a href="../Kurs_filer/Kurs_4_1.html">Læringsmål KAP 4</a>
-        <a href="../Kurs_filer/Kurs_4_2.html">If-setninger</a>
-        <a href="../Kurs_filer/Kurs_4_3.html">For-løkker</a>
-        <a href="../Kurs_filer/Kurs_4_4.html">While-løkker</a>
+        <a href="../Kurs_filer/Kurs_4_1.html">4.1 Læringsmål KAP 4</a>
+        <a href="../Kurs_filer/Kurs_4_2.html">4.2 If-setninger</a>
+        <a href="../Kurs_filer/Kurs_4_3.html">4.3 For-løkker</a>
+        <a href="../Kurs_filer/Kurs_4_4.html">4.4 While-løkker</a>
     </div>
 
 </div>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sidemeny.css">
+    <script src="./script/sidemeny.js"></script>
+    <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./styles/editor/codemirror.css">
+    <title>Kurs 4.2 If-setninger</title>
+</head>
+
+<body>
+
+    <header></header>
+
+    <div id = "sidebar"></div>
+
+
+    <main>
+        <!-- HER KOMMER HOVEDINNHOLDET -->
+        <h1><span>4.2 If-setninger</span></h1>
+        <p>
+            For at en datamaskin skal kunne kjøre kode må den ha noen betingelser. En If-setning (også kalt betingelsessetning), brukes når man ønsker å få en bestemt betingelse oppfylt før koden kjøres. Det vil si at det som vi skriver som betingelse må være sant, eller stemme før koden inni setningen blir kjørt. Måten If-setninger skrives på er: 
+        </p>
+        <div id = "eksempel1"></div>
+        <p>
+            <em>Eksempel:</em>
+        </p>
+        <div id = "eksempel2"></div>
+        <p>
+            Dersom man ønsker å skape et utfall for når betingelsen ikke blir møtt, bruker vi kommandoen else. Det som da vil skje er at koden som står innenfor krøllparentesene til else kommandoen, blir kjørt når betingelsen til if ikke blir møtt.  
+            La oss ta et eksempel: Aldersgrensen på spillet er 15 år. Så hvis du er 15  år eller eldre kan du spille, men er du yngre får du ikke spille, slik blir det skrevet i JavaScript:
+        </p>
+        <div id = "eksempel3"></div>
+        <p>
+            Med en if-setning kan man sjekke flere betingelser, da bruker vi kommandoen else if. Det som er viktig å huske på når vi skal sjekke flere betingelser er at vi sjekker hver enkelt individuelt.  
+            Slik skriver man det i JavaScript: 
+        </p>
+        <div id = "eksempel4"></div>
+    </main>
+
+
+
+    <footer>
+        <p>&#169; Codequackers 2021</p>
+        <div class="socialmedia">
+            <i class="fab fa-facebook fa-lg"></i>
+            <i class="fab fa-youtube fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+        </div>
+    </footer>
+
+    </body>
+
+    <link rel="stylesheet" href="./styles/editor/codemirror.css">
+    <script src="./script/editor/codemirror.js"></script>
+    <script src="./script/editor/javascript.js"></script>
+    <script>
+        const values = [
+            'if (betingelse) {\n\ Kode som kjøres når betingelsene er oppfylt\n\};',
+            'let person = 20;\n\if (person >= 18){\n\//Hvis betingelsen er sann vil koden kjøres her\n\};',
+            'if (person < 15){\n\console.log("Du kan ikke spille spillet.");\n\} else {\n\console.log("Du kan spille spillet.");\n\}',
+            'if (person <= 18){\n\console.log("Personen er 18 år eller eldre");\n\} else if (person <= 15){\n\console.log("Personen er 15 år eller eldre");\n\} else {\n\console.log("Personen er mindre en 15 år");\n\};',
+        ];
+    
+        for(let i = 0; i < values.length; i++){
+            const elem = document.getElementById('eksempel'+(i+1));
+            const ed = CodeMirror(elem, {
+                mode: 'javascript',
+                lineNumbers: false,
+                lineWrapping: true,
+                value: values[i],
+                readOnly: 'nocursor' 
+            });
+        }
+    </script>
+    <link rel="stylesheet" href="./styles/editor/editorstyle.css">
+    <script src="./script/externals.js"></script>
+    </html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sidemeny.css">
+    <script src="./script/sidemeny.js"></script>
+    <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./styles/editor/codemirror.css">
+    <title>Kurs 3.6 Aritmetiske operatorer</title>
+</head>
+
+<body>
+    <header></header>
+
+    <div id = "sidebar"></div>
+
+    <main>
+        <!-- HER KOMMER HOVEDINNHOLDET -->
+        <h1><span>3.6 Aritmetiske operatorer</span></h1>
+        <p>
+            I JavaScript finnes det mange ulike kombinasjoner av spesialtegn som gir deg en helt unik utregning.
+            <br><br>
+             Heldigvis er det ikke alle man trenger å ha friskt i minne hver gang man setter seg ned for å kode.
+
+            Nedenfor finner du en nyttig tabell som viser deg hvilke operatorer du kan bruke for å utføre den utregningen du ønsker. Tabellen tar utgangspunkt i de mest brukte operatorene.
+            <br>
+        </p>
+        <img src="../Screenshots/Aritmetiske_operatorer.PNG" alt="Illustrasjon CodeQuackers">
+    </main>
+
+
+
+    <footer>
+        <p>&#169; Codequackers 2021</p>
+        <div class="socialmedia">
+            <i class="fab fa-facebook fa-lg"></i>
+            <i class="fab fa-youtube fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+        </div>
+    </footer>
+
+</body>
+
+<link rel="stylesheet" href="./styles/editor/codemirror.css">
+<script src="./script/editor/codemirror.js"></script>
+<script src="./script/editor/javascript.js"></script>
+<script>
+    const values = [
+        'const FUGLETYPE = "and";\n\const ANTALL_ARTER = 120;',
+        'let navnDam = "Andedammen";\n\console.log(navnDam);\n\console.log(typeof navnDam);',
+    ];
+
+    for(let i = 0; i < values.length; i++){
+        const elem = document.getElementById('eksempel'+(i+1));
+        const ed = CodeMirror(elem, {
+            mode: 'javascript',
+            lineNumbers: false,
+            lineWrapping: true,
+            value: values[i],
+            readOnly: 'nocursor' 
+        });
+    }
+</script>
+<link rel="stylesheet" href="./styles/editor/editorstyle.css">
+<script src="./script/externals.js"></script>
+</html> 
+</html>

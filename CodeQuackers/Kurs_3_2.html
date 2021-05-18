@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/sidemeny.css">
+    <script src="./script/sidemeny.js"></script>
+    <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
+    <script src="./script/script.js"></script>
+    <link rel="stylesheet" href="./styles/editor/codemirror.css">
+    <title>Kurs 3.2 Datatyper</title>
+</head>
+
+<body>
+    <header></header>
+
+    <div id = "sidebar"></div>
+
+    <main>
+        <!-- HER KOMMER HOVEDINNHOLDET -->
+        <h1><span>3.2 DATATYPER</span></h1>
+        <p>
+            La oss tenke at vi lager et program hvor vi ønsker litt informasjon om en andedam: 
+            <br>
+            <br>
+            <br>
+            1. Navn på dammen 
+            <br>
+            <br>
+            2. Antall ender i dammen 
+            <br>
+            <br>
+            3. Er dammen full? 
+            <br>
+            <br>
+            4. Hvilken art er endene? 
+            <br>
+            <br>
+            5. Temperatur i vannet 
+            <br>
+            <br>
+            <br>
+            Disse forskjellige dataene har en gitt datatype. For eksempel vil det være naturlig at “antall ender i dammen” får datatypen number, i og med at svaret alltid er et tall. Tallet kan ikke være negativt, og man kan heller ikke oppgi antallet som kommatall. Derfor vil datatypen være et positivt heltall.<br><br><br> “Temperatur i vannet” kan derimot få en negativ verdi, eller en verdi med komma. 
+            “Navn på dammen” og “arten på endene” kan ikke oppgis som tall, og vil derfor få en annen dataype. Datatypen til variablene som får tekst som svar kaller vi for strings. Om en verdi kun kan ha en av to verdier som svar pleier man å bruke true or false (sant eller usant). True or false er en egen datatype, men omtales som boolean. I vårt eksempel vil det være naturlig å bruke true/false for å finne ut av om dammen er full eller ikke. 
+            Vårt program vil da se slik ut: 
+            <br>
+            <br>
+            <div id = "eksempel1"></div>
+            <br>
+            <br>
+            Du kan alltid sjekke hvilken datatype din variabel har. Dette kan du gjøre ved å bruke operatoren typeof. I eksempelet nedenfor ser du hvordan vi sjekker datatypen til antallEnder ved bruk av typeof: 
+            <br>
+            <br>
+            <div id = "eksempel2"></div>
+            <br>
+            <br>
+            Console log vil da vise dette:
+            <br>
+            <br>
+            <!--HER KOMMER DET EDITOR-->
+            <div id = "eksempel3"></div>
+            <br>
+            <br>
+            <br>
+            <br>
+        </p>
+      
+
+    </main>
+
+
+    <footer>
+        <p>&#169; Codequackers 2021</p>
+        <div class="socialmedia">
+            <i class="fab fa-facebook fa-lg"></i>
+            <i class="fab fa-youtube fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
+        </div>
+    </footer>
+
+</body>
+
+<link rel="stylesheet" href="./styles/editor/codemirror.css">
+<script src="./script/editor/codemirror.js"></script>
+<script src="./script/editor/javascript.js"></script>
+<script>
+    const values = [
+        'let navnDam = “Andedammen”;\n\let antEnder = 14;\n\let damFull = false;\n\let enderArt = “stokkand”;\n\let damTemp = 10;',
+        'let navnDam = "Andedammen";\n\console.log(navnDam);\n\console.log(typeof navnDam);',
+        'Andedammen\n\String',
+    ];
+
+    for(let i = 0; i < values.length; i++){
+        const elem = document.getElementById('eksempel'+(i+1));
+        const ed = CodeMirror(elem, {
+            mode: 'javascript',
+            lineNumbers: false,
+            lineWrapping: true,
+            value: values[i],
+            readOnly: 'nocursor' 
+        });
+    }
+</script>
+<link rel="stylesheet" href="./styles/editor/editorstyle.css">
+<script src="./script/externals.js"></script>
+</html> 
+</html>
