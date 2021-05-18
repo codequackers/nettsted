@@ -15,80 +15,10 @@
 
 <body>
 
-
-
-    <div class="header">
-        <div class="full_logo">
-            <img class="logo" src="logo/cyan_logo_without_txt.png" alt="CodeQuackers Logo" width="50px">
-            <img class="name" src="logo/name.png" alt="CodeQuackers Logo" width="100px">
-        </div>
-
-        <div class="menu">
-            <p><a class="basic" href="x">Hjem</a></p>
-            <p><a class="basic" href="x">Kurs</a></p>
-            <p><a class="basic" href="x">Quiz</a></p>
-            <p><a class="basic" href="x">Kodeeditor</a></p>
-        </div>
-
-    </div>
-
-
+    <header>
+    </header>
 
     <div id="sidebar">
-        <div class="toggle-button" id="toggle-button" onclick="show()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-
-        <div class="sidebar">
-            <h4>Innholdsfortegnelse</h4>
-            <br>
-            <br>
-            <a href="#">Introduksjon til CodeQuackers læringsressurs</a>
-
-
-            <button class="dropdown-btn">KAP.1 - Introduksjon til programmering
-                <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">Test 1</a>
-                <a href="#">Test 2</a>
-                <a href="#">Test 3</a>
-            </div>
-
-
-            <button class="dropdown-btn">KAP.2 - Variabler
-                <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">Test 1</a>
-                <a href="#">Test 2</a>
-                <a href="#">Test 3</a>
-            </div>
-
-            <button class="dropdown-btn">KAP.3 - Datatyper, konstanter og operatorer
-                <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">Test 1</a>
-                <a href="#">Test 2</a>
-                <a href="#">Test 3</a>
-            </div>
-
-
-            <button class="dropdown-btn">KAP.4 - Løkker
-                <i class="fas fa-caret-down"></i>
-            </button>
-            <div class="dropdown-container">
-                <a href="#">Test 1</a>
-                <a href="#">Test 2</a>
-                <a href="#">Test 3</a>
-            </div>
-
-        </div>
-
-
     </div>
 
 
@@ -104,11 +34,13 @@
         </p>
         <br>
         <p>
-        Vi er et team på tre studenter, som gjerne vil gjøre programmering litt mindre skremmende for de som ikke helt er kjent med det, derav dette prosjektet. 
-        <br>
-        CodeQuackers er under utvikling, og derfor er ikke alt på plass riktig enda, og hvem vet hvor vi vil ende opp?
-        <br>
-        Uansett er vi glade for å ha deg med på laget!
+            Vi er et team på tre studenter, som gjerne vil gjøre programmering litt mindre skremmende for de som ikke
+            helt er kjent med det, derav dette prosjektet.
+            <br>
+            CodeQuackers er under utvikling, og derfor er ikke alt på plass riktig enda, og hvem vet hvor vi vil ende
+            opp?
+            <br>
+            Uansett er vi glade for å ha deg med på laget!
         </p>
 
         <img class="pressebilde" src="logo/Pressebilde.png" width="500px">
@@ -116,7 +48,10 @@
         <p>-Espen Raugstad, Emily Thu og Frida Sandøy Kvale</p>
         <br>
         <br>
-
+        <div id="navigasjon">
+            <button onclick="location.href='Kursoversikt.html'">Forrige</button>
+            <button onclick="location.href='Kurs_1_1.html'">Neste</button>
+        </div>
     </main>
 
 
@@ -131,5 +66,6 @@
     </footer>
 
 </body>
+<script src="./script/externals.js"></script>
 
 </html>

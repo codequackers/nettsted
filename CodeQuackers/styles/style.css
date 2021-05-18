@@ -135,6 +135,18 @@ h3 span{
     height: 47px;
 }
 
+/* HEADER */
+.name {
+    padding-left: 10px;
+}
+
+.full_logo {
+    display: flex;
+    align-items: center;
+}
+
+/* FOOTER */
+
 footer {
     background: #343434;
     position: fixed;
@@ -155,25 +167,20 @@ footer p {
     font-weight: 400;
 }
 
-.name {
-    padding-left: 10px;
-}
-
-.full_logo {
-    display: flex;
-    align-items: center;
-}
-
 .socialmedia {
     display: flex;
     align-self: center;
-    padding-right: 20px;
-    
+    padding-right: 20px;  
 }
+
+
+/* FONT AWESOME */
 
 .fab{
     padding: 10px;
 }
+
+/* FORSIDE */
 
 .homepage{
     display: grid;
@@ -270,3 +277,24 @@ iframe {
 .spesial {
     font-size: 50px;
 }
+
+/* SIDENAVIGASJON */
+#navigasjon{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1em auto;
+}
+
+button{
+    background: rgba(0, 159, 227, 0.5);
+    border: none;
+    font-family: Montserrat;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+  }
