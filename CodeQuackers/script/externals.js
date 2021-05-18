@@ -5,9 +5,9 @@ const header = `
 </div>
 
 <div class="menu">
-    <p><a class="basic" href="x">Hjem</a></p>
-    <p><a class="basic" href="x">Kurs</a></p>
-    <p><a class="basic" href="x">Quiz</a></p>
+    <p><a class="basic" href="index.html">Hjem</a></p>
+    <p><a class="basic" href="Kursoversikt.html">Kurs</a></p>
+    <!-- <p><a class="basic" href="x">Quiz</a></p> -->
     <p><a class="basic" href="x">Kodeeditor</a></p>
 </div>
 `;

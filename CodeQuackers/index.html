@@ -7,26 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
     <script src="https://kit.fontawesome.com/633401e33b.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-<script src="script.js"></script>
+<script src="./script/script.js"></script>
 
 <body>
-    <div class="header">
+    <header>
         <div class="full_logo">
             <img class="logo" src="logo/cyan_logo_without_txt.png" alt="CodeQuackers Logo" width="50px">
             <img class="name" src="logo/name.png" alt="CodeQuackers Logo" width="100px">
         </div>
 
         <div class="menu">
-            <p><a class="basic" href="x">Hjem</a></p>
-            <p><a class="basic" href="x">Kurs</a></p>
-            <p><a class="basic" href="x">Quiz</a></p>
+            <p><a class="basic" href="index.html">Hjem</a></p>
+            <p><a class="basic" href="Kursoversikt.html">Kurs</a></p>
+            <!-- <p><a class="basic" href="x">Quiz</a></p> -->
             <p><a class="basic" href="x">Kodeeditor</a></p>
         </div>
 
-    </div>
+    </header>
 
     <div class="homepage">
         <div class="hello">
@@ -35,9 +35,9 @@
             <p>Lær deg å kode i JavaScript sammen med CodeQuackers!
                 Vi tilbyr enkle kurs helt kostnadsfritt.
             </p>
-            <button>Start her</button>
+            <button onclick="location.href='Kursoversikt.html'">Start her</button>
         </div>
-        <img class="bakphoto" src="test/coding-on-a-computer.jpg" alt="Coding on a Computer" width="100%" height="100%">
+        <img class="bakphoto" src="./bilder/coding-on-a-computer.jpg" alt="Coding on a Computer" width="100%" height="100%">
         
     
     </div>
